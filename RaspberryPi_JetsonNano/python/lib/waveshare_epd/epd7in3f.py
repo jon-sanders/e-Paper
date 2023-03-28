@@ -165,8 +165,8 @@ class EPD:
         self.send_command(0x41)     # TSE
         self.send_data(0x00)
 
-        self.send_command(0x50)
-        self.send_data(0x3F)
+        self.send_command(0x50)    # Border Waveform Control
+        self.send_data(0x3F)    
 
         self.send_command(0x60)
         self.send_data(0x02)
